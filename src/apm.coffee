@@ -9,7 +9,7 @@ module.exports =
     if process.platform is 'win32' then process.env.USERPROFILE else process.env.HOME
 
   getAtomDirectory: ->
-    process.env.ATOM_HOME ? path.join(@getHomeDirectory(), '.atom')
+    process.env.ATOM_HOME ? path.join(@getHomeDirectory(), '.monads')
 
   getRustupHomeDirPath: ->
     if process.env.RUSTUP_HOME
